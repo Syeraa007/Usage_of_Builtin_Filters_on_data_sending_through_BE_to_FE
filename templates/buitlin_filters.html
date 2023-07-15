@@ -7,23 +7,27 @@
 </head>
 <body>
     <center>
+
         <h1 style="color: aqua;"><u>Filters using on data from BE to FE displaying</u></h1>
-        <h1>{{data}}</h1>
-        <h1 style="color: blue;">Filters Usage Functionality</h1>
-            <h2>Upper Filter : {{data|upper}}</h2>
-            <h2>Lower Filter : {{data|lower}}</h2>
-            <h2>Title Filter : {{data|title}}</h2>
-            <h2>Capfirst Filter : {{data|capfirst}}</h2>
-            <h2>Length Filter : {{data|length}}</h2>
-        <h1 style="color: rgb(15, 240, 94);">Filters with Arguments Usage Functionality</h1>
-            <h2>Truncate words Filter : {{data|truncatewords:'5'}}</h2>
-            <h2>Truncate chars Filter : {{data|truncatechars:'15'}}</h2>
-            <h2>Slice Filter : {{data|slice:'15'}}</h2>
-            <h2>Date Filter : {{dates|date:'H Y y D'}}</h2>
+        <table style="text-align:center">
+            <tr><td><h1>{{data}}</h1></td></tr>
+            <tr><td><h1 style="color: blue;">Filters Usage Functionality</h1></td></tr>
+                <tr><td><h2>Upper Filter : {{data|upper}}</h2></td></tr>
+                <tr><td><h2>Lower Filter : {{data|lower}}</h2></td></tr>
+                <tr><td><h2>Title Filter : {{data|title}}</h2></td></tr>
+                <tr><td><h2>Capfirst Filter : {{mine|capfirst}}</h2></td></tr>
+                <tr><td><h2>Length Filter : {{data|length}}</h2></td></tr>
+            <tr><td><h1 style="color: rgb(15, 240, 94);">Filters with Arguments Usage Functionality</h1></td></tr>
+                <tr><td><h2>Truncate words Filter : {{data|truncatewords:'5'}}</h2></td></tr>
+                <tr><td><h2>Truncate chars Filter : {{data|truncatechars:'15'}}</h2></td></tr>
+                <tr><td><h2>Slice Filter : {{data|slice:'15'}}</h2></td></tr>
+                <tr><td><h2>Date Filter : {{dates|date:'H Y y D d'}}</h2></td></tr>
 
-            <h2>Pluralize Filter : I have {{count}} dog{{count|pluralize}} in my pet space environment palace</h2>
-            <h2>Pluralize FIlter with Arguments : These {{count}} dog{{count|pluralize}} is{{c|pluralize:'is,are'}} in my pet space environment palace</h2>
-
+            <tr><td><h2>Pluralize Filter : I have {{count}} dog{{count|pluralize}} in my pet space environment palace</h2></td></tr>
+            <tr><td><h2>I have {{count}} mango{{count|pluralize}} in my bag</h2></td></tr>
+            <tr><td><h2>Pluralize Filter with Arguments : I have {{count}} dog{{count|pluralize}} which {{count|pluralize:'is,are'}} in my pet space environment palace</h2></td></tr>
+            <tr><td><h2>I have {{count}} mango{{count|pluralize:'es'}} in my bag</h2></td></tr>
+        </table>
 
     </center>
 </body>
